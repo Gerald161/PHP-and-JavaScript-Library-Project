@@ -1,0 +1,33 @@
+*{
+	margin: 0;
+	padding: 0;
+	color: white;
+}
+
+nav{
+	display: flex;
+	padding: 20px;
+}
+
+body{
+	background: rgba(0,0,0,0.7); 
+}
+
+.logo{
+	flex: 1;
+}
+
+.signs{
+	flex: 1;
+	display: flex;
+	justify-content: space-between;
+}
+
+.signs a{
+	text-decoration: none;
+	transition: all 0.4s;
+}
+
+.signs a:hover{
+	color: dodgerblue;
+}
