@@ -1,0 +1,78 @@
+*{
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+	color: white;
+}
+
+body{
+	height: 100vh;
+	background: url(1.png) center/cover no-repeat;
+}
+
+.box{
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%,-50%);
+	width: 400px;
+	background: rgba(0,0,0,0.5);
+	padding: 40px;
+	box-shadow: 0 15px 25px rgba(0,0,0,0.5);
+	border-radius: 10px;
+}
+
+.box h2{
+	margin: 0 0 30px;
+	color: #fff;
+	text-align: center;
+}
+
+.box .inputBox{
+	position: relative;
+}
+
+.box .inputBox input{
+	letter-spacing: 1px;
+	width: 100%;
+	padding: 10px 0;
+	color: #fff;
+	margin-bottom: 30px;
+	border: none;
+	outline: none;
+	background: transparent;
+	border-bottom: 1px solid #fff;
+}
+
+.box .inputBox label{
+	position: absolute;
+	left: 0;
+	top: 10px;
+	pointer-events: none;
+	transition: all 0.5s;
+	color: white;
+}
+
+.box .inputBox input:focus ~ label,
+.box .inputBox input:valid ~ label{
+	top: -18px;
+	color: #03a9f4;
+	font-size: 1.2em;
+}
+
+.box input[type="submit"]{
+	background: transparent;
+	border: none;	
+	outline: none;
+	color: #fff;
+	background: #03a9f4;
+	padding: 10px 20px;
+	cursor: pointer;
+	border-radius: 5px;
+}
+
+.red{
+	color: red;
+	position: relative;
+	top: -15px;
+}
